@@ -1,0 +1,226 @@
+/* Background Animation */
+body {
+  background: radial-gradient(circle, #24246e, #06051f);
+  height: 100vh;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: auto;
+  width: 60vh;
+}
+.content h2 {
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #fff;
+  font-family: montserrat;
+  font-size: 80px;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  text-align: center;
+  line-height: 0.9;
+}
+.content h2 b {
+  -webkit-text-fill-color: transparent;
+  font-size: 65px;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+/* Quote Box With Buttons */
+.QuoteBox {
+  display: flex;
+  flex-direction: column;
+}
+/* Submit btn And Select btn */
+.btns {
+  display: flex;
+  margin-top: 20px;
+  width: 60vw;
+  justify-content: space-evenly;
+}
+/* Quote Box Border */
+.GradientBorder {
+  position: relative;
+  width: 60vw;
+  padding: 20px 0;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+  background: #020117;
+}
+.GradientBorder::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+  z-index: -1;
+}
+.GradientBorder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+  z-index: -2;
+  filter: blur(40px);
+}
+/* Data List */
+.select {
+  height: 3em;
+  line-height: 3;
+  background: #24246e;
+  overflow: hidden;
+  border-radius: 0.25em;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: medium;
+}
+
+/* button */
+.button-73 {
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #adcfff 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: #ffc229;
+  box-shadow: #ff6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
+}
+/* Loading */
+.loading-area {
+  display: grid;
+  place-items: center;
+  height: 30vh;
+}
+.loader div {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: animate 1.5s ease-in-out infinite;
+  display: inline-block;
+  margin: 10px;
+  background-color: #fff;
+  filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 23px #fff);
+}
+.loader div:nth-child(0) {
+  animation-delay: 0s;
+}
+.loader div:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.loader div:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.loader div:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.loader div:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.loader div:nth-child(5) {
+  animation-delay: 1s;
+}
+.loader div:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.loader div:nth-child(7) {
+  animation-delay: 1.4s;
+}
+@keyframes animate {
+  0%,
+  100% {
+    transform: scale(0.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+@media screen and (300px < width < 768px) {
+  .content h2 {
+    font-family: montserrat;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    text-align: center;
+    line-height: 1;
+  }
+  .content h2 b {
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+  }
+  .GradientBorder {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+  }
+  .btns {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+.select {
+  font-size: large;
+  margin-bottom: 20px;
+}
+}
+
+
