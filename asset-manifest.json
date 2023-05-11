@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Qoute-Generator/static/css/main.dda84701.css",
+    "main.js": "/Qoute-Generator/static/js/main.6cf72cd3.js",
+    "static/js/787.bf514722.chunk.js": "/Qoute-Generator/static/js/787.bf514722.chunk.js",
+    "index.html": "/Qoute-Generator/index.html",
+    "main.dda84701.css.map": "/Qoute-Generator/static/css/main.dda84701.css.map",
+    "main.6cf72cd3.js.map": "/Qoute-Generator/static/js/main.6cf72cd3.js.map",
+    "787.bf514722.chunk.js.map": "/Qoute-Generator/static/js/787.bf514722.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dda84701.css",
+    "static/js/main.6cf72cd3.js"
+  ]
+}
